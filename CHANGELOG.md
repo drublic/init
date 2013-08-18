@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add documentation about how to write modules with Sass
 * Remove media-query files in favor of inline media-queries
 
 * Add .bowerrc configuration file for Bower
@@ -12,7 +13,7 @@
 * Add grunt-imageoptim as task
 
 * Update jQuery to 1.10.2
-* Use SASS-Mixins via Bower
+* Use Sass-Mixins via Bower
 * Use Bower for package management and replace vendor packages (#24)
 * Update to Google Universal Analytics
 * Remove CC for IE7
