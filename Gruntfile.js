@@ -97,6 +97,16 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Losslessly optimize images
+		imageoptim: {
+			files: ['img'],
+			options: {
+				jpegMini: true,
+				imageAlpha: true,
+				quitAfter: true
+			}
+		},
+
 		// Server config
 		connect: {
 			server: {
@@ -109,10 +119,10 @@ module.exports = function (grunt) {
 
 		// Setup concurrent tasks
 		concurrent: {
-			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'copy'],
+			deploy1: ['jshint', 'clean', 'modernizr', 'sass:deploy', 'imageoptim', 'copy'],
 			deploy2: ['requirejs'],
-			dev1: ['jshint', 'sass:dev', 'copy'],
-			dev2: ['requirejs'],
+			dev1: ['jshint', 'sass:dev', 'imageoptim', 'copy'],
+			dev2: ['requirejs']
 		}
 	});
 
@@ -124,6 +134,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-imageoptim');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-concurrent');
 
