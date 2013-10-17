@@ -14,6 +14,9 @@ require.config({
 
 	shim: {
 		// If you need to shim anything
-	}
+	},
+	
+	// Prevent caching issues, by adding an additional URL argument
+	urlArgs: "bust=" +  (new Date()).getTime()
 
 });
