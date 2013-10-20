@@ -55,5 +55,24 @@ module.exports = {
 
 	tests: {
 		src: 'tests/**/*spec.js'
+	},
+
+	// Versioned references
+	replace: {
+		deploy: {
+			src: ['temp/index.html'],
+			dest: 'dist/index.html',
+			maincss: '<%= pkg.version %>/main.min.css',
+			modernizr: '<%= pkg.version %>/modernizr.min.js',
+			mainjs: '<script src="<%= pkg.version %>/main.min.js"></script>'
+		},
+
+		dev: {
+			src: ['temp/index.html'],
+			dest: 'index.html',
+			maincss: 'css/main.css',
+			modernizr: 'components/modernizr/modernizr.js',
+			mainjs: '<script data-main="js/config" src="components/requirejs/require.js"></script>'
+		}
 	}
 };
