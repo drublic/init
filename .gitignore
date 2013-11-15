@@ -9,3 +9,5 @@ components
 dist
 index.html
 
+test/dist
+
