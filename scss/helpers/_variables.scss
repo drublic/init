@@ -3,8 +3,8 @@
  */
 
 // Fonts
-$font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-key: Georgia, 'Times New Roman' serif;
+$font-main: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-key: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // <hr> color
 $hr-color: #ccc;
@@ -14,3 +14,16 @@ $selection-color: #b3d4fc;
 
 // Text Color
 $main-color: #222;
+
+
+
+// Spacing
+$main-spacing-horizontal: 10px;
+$main-spacing-vertical:   5px;
+$main-spacing: $main-spacing-horizontal $main-spacing-vertical;
+
+$large-spacing-horizontal: 20px;
+$large-spacing-vertical:   1px;
+$large-spacing: $large-spacing-horizontal $large-spacing-vertical;
+
+

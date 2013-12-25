@@ -4,6 +4,7 @@
  * @author  Some author's name
  * @version v0.0.0
  */
+@charset "UTF-8";
 
 
 // Helpers
@@ -23,6 +24,7 @@
 
 // Modules
 @import 'modules/box';
+@import 'modules/navigation';
 
 // Print Stylesheets
 @media print {

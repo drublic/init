@@ -41,6 +41,8 @@ module.exports = {
 		},
 
 		files: [{
+			expand: true, 
+			flatten: true,
 			src: config.replace.dev.src,
 			dest: config.replace.dev.dest
 		}]

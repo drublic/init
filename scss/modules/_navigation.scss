@@ -1,0 +1,33 @@
+.navigation {
+	$nav-height    : 45px;
+	$nav-bg-color  : #ddd;
+	$nav-text-color: #34495e;
+	background: $nav-bg-color;
+	overflow: hidden;
+	li {
+		list-style-type: none;
+		float: left;
+		overflow: hidden;
+		height: $nav-height;
+		padding: 0 $large-spacing-horizontal;
+		&:first-child { margin-left: $large-spacing-horizontal; }
+		a {
+			margin-top: 8px;
+			display: block;
+			padding: 2px 4px;
+			color: $nav-text-color;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 15px;
+			line-height: 22px;
+			font-weight: 900;
+			&.active, &:hover {
+				border-bottom: 3px solid $nav-text-color;
+			}
+			&:active{
+				border-bottom: 3px solid lighten($nav-text-color, 10%);
+			}
+		}
+	}
+}

@@ -54,6 +54,8 @@ module.exports = function (grunt) {
 	// A task for development
 	grunt.registerTask('dev', [
 		'jshint',
+		//TODO: ADD scsslint support
+		'scsslint',
 		'sass:dev',
 		'copy',
 		'requirejs',
@@ -64,6 +66,8 @@ module.exports = function (grunt) {
 	grunt.registerTask('build', [
 		'jshint',
 		'modernizr',
+		//TODO: ADD scsslint support
+		'scsslint',
 		'sass:build',
 		'imagemin',
 		'copy',
