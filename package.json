@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install"
+    "postinstall": "node _postinstall.js"
   },
   "engines": {
     "node": ">=0.10"
