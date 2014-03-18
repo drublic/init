@@ -15,11 +15,13 @@ You will need to install some stuff, if you haven't already:
 Majors:
 
 * Node.js
+* Ruby
 
 Secondaries:
 
 * Node: npm
 * Bower
+* Ruby: Sass
 
 After you've set this stuff up please run
 
@@ -64,7 +66,7 @@ Please help making this project better and [contribute](CONTRIBUTING.md) with yo
 
 ## CSS
 
-We currently work with [Sass](http://sass-lang.com/) (in its dialect SCSS) and do not use CSS directly. We use [libsass](https://github.com/hcatlin/libsass) which is a C implementation of Ruby Sass, thus faster.
+We currently work with [Sass](http://sass-lang.com/) (in its dialect SCSS) and do not use CSS directly.
 
 Please do not edit the CSS-files in any case but search the corresponding `.scss` file and edit it accordingly. If you are not familiar with SCSS you can write pure CSS which is actually valid SCSS.
 
