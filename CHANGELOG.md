@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add config option to add custom concat tasks (#87)
 * Clean up Karma configuration and make coverage working with new version
 * Add `grunt/tasks` folder for own tasks
 * Add directory `grunt/plugins` to include plugins for Grunt config
