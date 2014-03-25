@@ -59,6 +59,8 @@ module.exports = {
 		config: 'test/test-main.js'
 	},
 
+	concat: {},
+
 	// Versioned references
 	replace: {
 		build: {
