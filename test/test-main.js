@@ -5,10 +5,17 @@
 	// Make async
 	window.__karma__.loaded = function () {};
 
+	for (var file in window.__karma__.files) {
+		if (/spec\.js$/.test(file)) {
+			tests.push(file.replace(/^\/base\//, 'http://localhost:9876/base/'));
+		}
+	}
+
 	require.config({
+		urlArgs: "bust=" + (new Date()).getTime(),
 
 		// Set baseUrl for Karma
-		baseUrl: 'base/js',
+		baseUrl: 'http://localhost:9876/base/js',
 
 		deps: ['config'],
 
