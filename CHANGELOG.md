@@ -1,5 +1,7 @@
 # Changelog
 
+* Update clearfix to a more simple, leaner one
+
 ### v2.0.0
 * Update node modules
 * Add JSCS module to grunt build workflow
